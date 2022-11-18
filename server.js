@@ -1,5 +1,7 @@
 import express from "express";
 import cors from "cors";
+import { graphqlHTTP } from "express-graphql";
+import { makeExecutableSchema } from "@graphql-tools/schema";
 
 const app = express();
 const port = 4000;
